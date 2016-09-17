@@ -1,0 +1,41 @@
+<html>
+<title>Locations</title>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+			<div id="container">
+
+			<div id="date">
+            <script type="text/javascript">
+            	document.write(Date());
+			</script>
+              </div>
+             <div class="clear_float"></div>
+			<div id='title'>
+            	<b>Search The Road Route</b>
+			</div>
+            <div id="googleMap">
+            </div>
+
+            <!-- right vane m xa her tesko css change gar tesko css style.css ma xa-->
+            <div id="right">
+			<div id="input">
+           <!-- <form action="#">-->
+                &nbsp;Your Location:<br/>
+                <input id="startvalue" type="text" placeholder="Start" name="start" style="WIDTH:152px;">
+                <br/><br/>
+                &nbsp;Destination:<br/>
+                <input id="endvalue" type="text" placeholder="End" name="end" style="width:152px;">
+                <center><button href="#" onClick="getRoute()">Search</button></center>
+                 <!--</form>--> 
+            </div>
+        </div>
+         </div>
+    </div>
+         
+</body>         
+</html>
+			

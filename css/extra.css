@@ -1,0 +1,111 @@
+.wrapper{
+	background: linear-gradient(white, grey);
+}
+
+#introduction {
+	padding: 20px 50px 95px 50px;
+	border: 10px;
+	margin-top: 15px; 
+	
+	border: 10px;
+	border-color: white; 
+}
+#first{
+	background: url(img/cover.jpg) center;
+}
+#introduction h1{
+	font-size: 100px;
+}
+
+#introduction h2{
+	color: black;
+}
+
+#introduction h4{
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.intro{
+	padding-top: 50px;
+	text-align: center;
+}
+
+#introduction h1,
+#introduction p{
+	padding-top: 40px;
+}
+
+#about{
+	padding: 50px;
+	background: linear-gradient(white, grey);
+}
+
+.row p{
+	padding: 50px;
+	text-align: justify;
+}
+
+.content i{
+	font-size: 20px;
+	margin-right: 7px; 
+}
+
+.content p{
+	font-size: 20px;
+}
+
+.abt {
+	padding: 10px;
+}
+
+#service {
+	padding: 50px;
+	background: linear-gradient(white, grey);
+}
+
+.src{
+	padding-top: 10px;
+}
+
+.para{
+	font-family: 'Roboto Slab', serif;
+	padding: 60px;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.lead{
+	font-size: 20px;
+	font-family: 'Roboto Slab', serif;
+}
+
+#component-sidebar{
+	background: linear-gradient(white, grey);
+	padding: 50px;
+}
+
+.row {
+	
+	padding: 0px;
+	text-align: justify;
+}
+
+.cont{
+	background: none;
+	padding: 50px;
+}
+
+#right {
+	padding-left: 20px;
+}
+
+.footer {
+	text-align: center;
+	padding: 10px;
+}
+
+.right{
+	padding: 10px;
+}
+

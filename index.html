@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project Gas-Soln</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./css/AdminLTE.min.css">
+    <link rel="stylesheet" href="./css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/extra.css">
+    <link href="./map/style.css" rel="stylesheet" type="text/css">
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="./map/script.js" type="text/javascript"></script>
+
+  </head>
+  <!-- End of head -->
+<!-- Starting of body -->
+  <body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy">
+    <div class="wrapper">
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>A</b>a</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><img src="img/trans.png" height="50px" width="50px"><b>A</b>aracana</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!--User Account: style can be found in dropdown(signup) -->
+               <li class="dropdown user user-menu">
+                <a href="./form/register.php">Signup</a>
+               </li>
+              <!--End of signup -->
+
+              <!-- User Account: style can be found in dropdown(signin) -->
+                <li class="dropdown user user-menu">
+                 	 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Signin</a>
+                  <ul class="dropdown-menu">
+                    <!-- Menu Body -->
+                    <li class="user-footer">
+                      <div class="col-xs-3 text-center">
+                        <p>
+                          Adminstrator
+                        </p>
+                      </div>
+                      <div class="pull-right">
+                        <a href="./form/login.php" class="btn btn-default btn-flat">Signin</a>
+                      </div>
+                    </li>
+                    <!-- Menu Footer-->
+                    <li class="user-footer">
+                      <div class="col-xs-3 text-center">
+                        <p>
+                          Individual/User
+                        </p>
+                        </div>
+                      <div class="pull-right">
+                        <a href="./form/login.php" class="btn btn-default btn-flat">Signin</a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <div class="sidebar" id="scrollspy">
+
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="nav sidebar-menu">
+
+          <div class="user-panel">
+            <div class="pull-left image"><!--Sidebar-->
+            <!-- for our logo -->
+            </div>
+          </div>
+
+          <!-- searching -->
+          <form action="#" method="get" class="sidebar-form">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+                  <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                    </button>
+                  </span>
+              </div>
+          </form>
+          <!-- end of searching -->
+advice
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="active"><a href="#introduction"><i class="fa fa-circle-o"></i>Home</a></li>
+            <li><a href="#about"><i class="fa fa-circle-o"></i>About Us</a></li>
+            <li><a href="#service"><i class="fa fa-circle-o"></i>Services</a></li>
+            <li><a href="#component-sidebar"><i class="fa fa-circle-o"></i>Contact Us</a></li>
+            <li><a href="#locat"><i class="fa fa-circle-o"></i>Location</a></li><br/>
+          <li><a href="https://aarcana.github.io"><img src="img/trans.png" height="30px" width="30px"> Copyright &copy; Aarcana 2016</a></li>
+          </ul>
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        
+
+<!-- Main content -->
+<div class="content body">
+
+<!-- ================================================================ -->
+<section id="introduction">
+  <h2 class="page-header"><img src="img/gas.png" height="30px" width="30px"> Gas-Soln</h2>
+   <div class="row">
+      <div class="intro">
+    	<div class="col-md-8 col-md-offset-2">
+      		<h1><img src="./img/gs.ico">Gas-Soln</h1>
+        	<p><h3>A solution to Gas shortage and Black marketing.
+          	<br>"For society"</h3></p>
+        </div>
+      </div>
+   </div>
+</section><!-- /#introduction -->
+
+<hr class="brk">
+<!-- ============================================================= -->
+
+<section id="about">
+  <h2 class="page-header"><img src="img/gas.png" height="30px" width="30px"> About Us</h2>
+  <div class="row">
+            
+                <h2 class="title text-center">What is LPG Solution?</h2>
+            <p class="intro text-center">LPG Solution is a complete protal that has been created with the motto of serving the community. The aim of gas portal is to minimise the black-marketing and eradicate the problems of fuel shoratage. Currently we are working in order to solve the problems related with the LPG fuel and provide every individuals with the actual details of the LPG fuel that are being circulated inside the valley.</p>
+            <div align="justify">
+              <div class="abt">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">                 
+                        
+                    <h3 class="sub-title"><i class="fa fa-heart"></i> Consumers focused</h3>
+                        <p>LPG Solution is created completely for the service of benefits of the consumers. No matter you use LPG for household or business, we are here to serve you.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+               
+               
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h3 class="sub-title"><i class="fa fa-clock-o"></i> Time saver</h3>
+                        <p>We provide details and transactions of LPG that are being circulated inside valley so it saves your time and help you to continue your routine.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+               
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h3 class="sub-title"><i class="fa fa-crosshairs"></i> Location Simplified</h3>
+                        <p>We also give you the location and dealers of the LPG so that you can find your nearest dealers and you can view reports of the transaction for the respective dealers.</p>
+                    </div><!--//content-->
+                </div><!--//item-->           
+                <div class="clearfix visible-md"></div>    
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h3 class="sub-title"><i class="fa fa-tablet"></i> Portable</h3>
+                        <p>You can access our web portal anytime, anywhere via internet. Simply sign in and get updated with the details of LPG import and sell inside valley.</p>
+                    </div><!--//content-->
+                </div><!--//item-->                
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h3 class="sub-title"><i class="fa fa-code"></i> Non-profit motive</h3>
+                        <p>We are totally dedicated towards the community welfare and committed for the nation building. You can use our service for free of charge.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h3 class="sub-title"><i class="fa fa-coffee"></i> Community Service</h3>
+                        <p font-size="20px">The overall mission of our team is to help the people of the community by protecting them from the LPG fuel shortage and black-marketing.</p>
+                    </div><!--//content-->
+                </div><!--//item-->               
+            </div><!--//abt-->
+          </div>               
+        </div>
+</section>
+
+<hr class="brk">
+<!-- ============================================================= -->
+
+<section id="service">
+  <h2 class="page-header"><img src="img/gas.png" height="30px" width="30px"> Services</h2>
+  <div class="para">
+  <p class="lead">
+    We provide all the stock details related with LPG fuel. You can also get information about transcations of import and sell of LPG inside the valley in the corresponding dealer from our site. Consumers with individual purpose as well as business purpose can be benefitted with our service. We are strictly against the black-marketing and target to prevent it completely. Following are the major services that we provede:
+		<ol>
+		<li>Stock details of LPG fuel</li>
+		<li>Transactions of LPG import and sell</li>
+		<li>Consumer support for individual as well as business purpose</li>
+		<li>Details of gas import and sell</li>
+		<li>Help consumer to find nearest dealer</li>
+		<li>Discourage black-marketing</li>
+		</ol>
+	All the informations provided here are genuine and accurate. We focus on the welfare of the community with our effort. We support you and need your support too. Please discourage black-marketing and be a civilized citizen for building nation.
+
+  </p><!--Content-->
+  </div>
+</section>
+<hr class="brk">
+<!-- ============================================================= -->
+<!-- Sidebar start-->
+<section id="component-sidebar">
+  <h2 class="page-header"><img src="img/gas.png" height="30px" width="30px"> Contact Us</h2>
+  <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <br/>
+                <p>Feel free to provide us some feedback on our website, give us suggestions for improving our services, or to just say hello!</p>
+
+                <div class="row">
+                    <div class="col-md-12">
+                      <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                    </div>
+                </div>
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Phone</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send " value="Send message">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+  </section>
+  <hr class="brk">
+<!-- ============================================================= -->
+<!-- For location-->
+<section id="locat">
+  <div class="cont">
+  <h2 class="page-header"><img src="img/gas.png" height="30px" width="30px"> Location</h2>
+  <div id="container">      
+      <div class="clear_float"></div>
+ 	     <div id='title'>
+    	  </div>
+            <div id="googleMap">
+            </div>
+           <div id="right">
+      		<div id="input">
+           <!-- <form action="#">-->
+                &nbsp;Your Location:<br/>
+                <input id="startvalue" type="text" placeholder="Start" name="start" style="WIDTH:152px;">
+                <br/><br/>
+                &nbsp;Gas Dipo:<br/>
+                <input id="endvalue" type="text" placeholder="End" name="end" style="width:152px;">
+                <button type="submit" class="btn btn-info pull-center" href="#" onClick="getRoute()" style="margin:8px;">Search</button>
+                 <!--</form>--> 
+            </div>
+        </div>
+     </div>
+    </div>
+</section><!--End of location-->
+
+<hr class="brk">
+  <!-- ===================================================================== -->
+  <section>
+      <footer>
+        <div class="container text-center"></div>
+    </footer>
+  </section><!-- Gap -->
+  <!-- ======================================================================= -->
+      <!-- Control Sidebar -->
+       <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+    <form >
+      <div class="box-body">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+            <br/>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+        </div>
+          <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+          </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+      </div>
+     <!-- /.box-body -->
+       <div class="col-sm-12">
+           <button type="submit" class="btn btn-default">Cancel</button>
+           <button type="submit" class="btn btn-info pull-right">Sign in</button>
+       </div>
+     <!-- /.box-footer -->
+     </form>
+    </ul>
+  </aside>
+      <!-- /.control-sidebar -->
+      <div class="control-sidebar-bg"></div>
+
+      <!-- Footer -->
+      <div class="footer">
+      	<img src="img/trans.png" height="30px" width="30px"><i class="fa"></i> Copyright &copy; Aarcana 2016</a>
+      </div><!--/Footer-->
+
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.2.3 -->
+    <script src="./jquery/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="./fastclick/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="./js/app.min.js"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="./js/jquery.slimscroll.min.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="./js/docs.js"></script>
+  </body>
+</html>
